@@ -21,6 +21,7 @@ let arrNumber = []
 
 
 function getInput(num) {
+    
     math1.value += num
 }
 
