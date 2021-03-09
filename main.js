@@ -8,7 +8,6 @@ let h1Answer = document.getElementById('h1Answer')
 let numbers = document.getElementById('numbers')
 let reset = document.getElementById('reset')
 let imputTop = document.getElementById('imputTop')
-let i;
 
 
 let signe;
@@ -17,14 +16,13 @@ let foo12;
 let foo13;
 let foo14;
 let foo15;
-let arrNumber = []
 
 
 
 function getInput(num) {
 
     math1.value += num
-    
+
 }
 
 function nekuda(tex) {
@@ -44,7 +42,7 @@ EssayButton.addEventListener('click', function () {
 })
 
 SubtractionButton.addEventListener('click', function () {
-    foo14 = math1.value
+    foo12 = math1.value
     math1.value = ''
     signe = '-'
 
@@ -52,13 +50,13 @@ SubtractionButton.addEventListener('click', function () {
 
 
 multiplicationButton.addEventListener('click', function () {
-    foo13 = math1.value
+    foo12 = math1.value
     math1.value = ''
     signe = '*'
 })
 
 Division.addEventListener('click', function () {
-    foo15 = math1.value
+    foo12 = math1.value
     math1.value = ''
     signe = '/'
 })
@@ -71,26 +69,25 @@ result.onclick = function () {
         imputTop.innerHTML += signe
         imputTop.innerHTML += math1.value
         math1.value = Number(math1.value) + Number(foo12)
-        // alert('+')
 
 
         console.log(foo12);
     } else if (signe == '*') {
-        imputTop.innerHTML += foo13
+        imputTop.innerHTML += foo12
         imputTop.innerHTML += signe
         imputTop.innerHTML += math1.value
-        math1.value = Number(math1.value) * Number(foo13)
+        math1.value = Number(math1.value) * Number(foo12)
 
     } else if (signe == '-') {
-        imputTop.innerHTML += foo14
+        imputTop.innerHTML += foo12
         imputTop.innerHTML += signe
         imputTop.innerHTML += math1.value
-        math1.value = Number(foo14) - Number(math1.value)
+        math1.value = Number(foo12) - Number(math1.value)
     } else if (signe == '/') {
-        imputTop.innerHTML += foo15
+        imputTop.innerHTML += foo12
         imputTop.innerHTML += signe
         imputTop.innerHTML += math1.value
-        math1.value = Number(foo15) / Number(math1.value)
+        math1.value = Number(foo12) / Number(math1.value)
     }
 }
 
