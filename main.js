@@ -11,11 +11,8 @@ let imputTop = document.getElementById('imputTop')
 
 
 let signe;
-let foo;
-let foo12;
-let foo13;
-let foo14;
-let foo15;
+let InboxNumber;
+
 
 
 
@@ -36,13 +33,13 @@ reset.addEventListener('click', function () {
 })
 
 EssayButton.addEventListener('click', function () {
-    foo12 = math1.value
+    InboxNumber = math1.value
     math1.value = ''
     signe = '+'
 })
 
 SubtractionButton.addEventListener('click', function () {
-    foo12 = math1.value
+    InboxNumber = math1.value
     math1.value = ''
     signe = '-'
 
@@ -50,13 +47,13 @@ SubtractionButton.addEventListener('click', function () {
 
 
 multiplicationButton.addEventListener('click', function () {
-    foo12 = math1.value
+    InboxNumber = math1.value
     math1.value = ''
     signe = '*'
 })
 
 Division.addEventListener('click', function () {
-    foo12 = math1.value
+    InboxNumber = math1.value
     math1.value = ''
     signe = '/'
 })
@@ -65,29 +62,29 @@ Division.addEventListener('click', function () {
 result.onclick = function () {
 
     if (signe == '+') {
-        imputTop.innerHTML += foo12
+        imputTop.innerHTML += InboxNumber
         imputTop.innerHTML += signe
         imputTop.innerHTML += math1.value
-        math1.value = Number(math1.value) + Number(foo12)
+        math1.value = Number(math1.value) + Number(InboxNumber)
 
 
-        console.log(foo12);
+        console.log(InboxNumber);
     } else if (signe == '*') {
-        imputTop.innerHTML += foo12
+        imputTop.innerHTML += InboxNumber
         imputTop.innerHTML += signe
         imputTop.innerHTML += math1.value
-        math1.value = Number(math1.value) * Number(foo12)
+        math1.value = Number(math1.value) * Number(InboxNumber)
 
     } else if (signe == '-') {
-        imputTop.innerHTML += foo12
+        imputTop.innerHTML += InboxNumber
         imputTop.innerHTML += signe
         imputTop.innerHTML += math1.value
-        math1.value = Number(foo12) - Number(math1.value)
+        math1.value = Number(InboxNumber) - Number(math1.value)
     } else if (signe == '/') {
-        imputTop.innerHTML += foo12
+        imputTop.innerHTML += InboxNumber
         imputTop.innerHTML += signe
         imputTop.innerHTML += math1.value
-        math1.value = Number(foo12) / Number(math1.value)
+        math1.value = Number(InboxNumber) / Number(math1.value)
     }
 }
 

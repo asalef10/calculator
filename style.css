@@ -65,18 +65,16 @@ html {
 .calculator-keys{
     box-shadow: 14px -1px 18px 18px #575454;
     position: relative;
-    animation: math 2s linear;
+    animation: math 1s linear;
 
 }
 @keyframes math{
     0% {
-        transform: rotate(0deg);
-        transform: translate(-220px)
+        transform: rotate(-380deg);
 
     }
     100%{
-        transform: rotate(280deg);
-        transform: translate(220px)
+        transform:rotate(380deg);
 
     }
 }
