@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background: #EAEBEC;
+  }
+ 
+  
+.container {
+    width: 400px;
+    margin: auto;
+  }
+  
